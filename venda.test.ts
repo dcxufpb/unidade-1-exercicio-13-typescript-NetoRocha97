@@ -30,16 +30,7 @@ const DATAHORA = new Date();
 let endereco : Endereco = new Endereco(LOGRADOURO, NUMERO, COMPLEMENTO,
   BAIRRO, MUNICIPIO, ESTADO, CEP);
 
-let loja: Loja = new Loja(NOME_LOJA, endereco, TELEFONE, OBSERVACAO, CNPJ, INSCRICAO_ESTADUAL);
-
-// test('loja vazia', () => {
-//     let loja_vazia: Venda = new Venda(, DATAHORA, CCF_VENDA, COO_VENDA);
-// })
-
-// test('data e hora vazios', () => {
-//     let data_hora_vazios: Venda = new Venda(loja, , CCF_VENDA, COO_VENDA);
-//       verificaCampoObrigatorio(`O campo datahora da venda é obrigatório`, data_hora_vazios);
-// })
+let loja: Loja = new Loja(NOME_LOJA, endereco, TELEFONE, OBSERVACAO, CNPJ, INSCRICAO_ESTADUAL)
 
 test('ccf vazio', () => {
   let ccf_vazio: Venda = new Venda(loja, DATAHORA, "", COO_VENDA);
